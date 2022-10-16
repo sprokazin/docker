@@ -70,3 +70,41 @@ if ($a % $b === 0) {
     $diff = $a % $b;
     echo 'Делится с остатком ' . $diff;
 }
+
+//Седьмое задание
+echo nl2br(PHP_EOL . "SeventhTask: " . PHP_EOL);
+$st = pow(2, 10);
+echo $st;
+echo nl2br(PHP_EOL . sqrt(245));
+$arr = [4, 2, 5, 19, 13, 0, 10];
+$sum = 0;
+foreach ($arr as $item) {
+    $sum += $item;
+}
+echo nl2br(PHP_EOL . sqrt($sum));
+
+//Восьмое задание
+echo nl2br(PHP_EOL . "EighthTask: " . PHP_EOL);
+echo round(sqrt(379), 2);
+echo nl2br(PHP_EOL . round(sqrt(379), 3));
+$newArr = ['floor' => floor(sqrt(587)), 'ceil' => ceil(sqrt(587))];
+echo '<pre>';
+print_r($newArr);
+echo '</pre>';
+
+//Девятое задание
+echo nl2br(PHP_EOL . "NinthTask: " . PHP_EOL);
+$array = [4, -2, 5, 19, -130, 0, 10];
+echo min($array);
+echo nl2br(PHP_EOL . max($array));
+
+//Десятое задание
+echo nl2br(PHP_EOL . "TenthTask: " . PHP_EOL);
+echo rand(1, 100);
+$randArr = [];
+for ($i = 0; $i < 10; $i++) {
+    $randArr[$i] = rand();
+}
+echo '<pre>';
+print_r($randArr);
+echo '</pre>';
