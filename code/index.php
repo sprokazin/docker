@@ -208,7 +208,7 @@ while ($result >= 10)
 echo nl2br(PHP_EOL . $result . PHP_EOL);
 
 //Пятнадцатое задание
-echo nl2br(PHP_EOL . "SixteenthTask: " . PHP_EOL);
+echo nl2br(PHP_EOL . "FifteenthTask: " . PHP_EOL);
 function repeatSymbol(string $symbol, int $count): array
 {
     $arr = [];
@@ -269,7 +269,7 @@ echo nl2br(PHP_EOL . count($arr) . PHP_EOL);
 echo nl2br(PHP_EOL . $arr[count($arr) - 1] . ' ' . $arr[count($arr) - 2] . PHP_EOL);
 
 //Шестнадцатое задание
-echo nl2br(PHP_EOL . "SeventeenthTask: " . PHP_EOL);
+echo nl2br(PHP_EOL . "SixteenthTask: " . PHP_EOL);
 function getSumBoolRes(int $num1, int $num2): bool
 {
     if ($num1 + $num2 > 10) {
@@ -319,3 +319,86 @@ if (count($arr) === 3) {
     }
     echo nl2br(PHP_EOL . $sumArr);
 }
+
+//Семнадцатое задание
+echo nl2br(PHP_EOL . "SeventeenthTask: " . PHP_EOL);
+for ($i = 1; $i <= 20; $i++) {
+    echo nl2br(PHP_EOL . str_repeat('x', $i));
+}
+echo nl2br(PHP_EOL . "NineteenthTask: " . PHP_EOL);
+$arr = [1, 2, 3, 9];
+
+//Восемнадцатое задание
+echo nl2br(PHP_EOL . "EighteenthTask: " . PHP_EOL);
+$arr = [1, 2, 3, 9];
+
+function sumOfArr(array $arr, int $i = 0, $sum = 0): int
+{
+    $sum = $sum + $arr[$i];
+
+    $i++;
+    if ($i === count($arr)) {
+        return $sum;
+    } else {
+        return sumOfArr($arr, $i, $sum);
+    }
+}
+
+$sum = (float)sumOfArr($arr) / count($arr);
+echo $sum;
+function sumOfNum(int $i = 1, $sum = 0): int
+{
+
+    if ($i === 101) {
+        return $sum;
+    } else {
+        $sum = $sum + $i;
+        $i++;
+        return sumOfNum($i, $sum);
+    }
+
+
+}
+
+echo nl2br(PHP_EOL . sumOfNum());
+function getNewArr(array $arr, int $i = 0, array &$resArr = []): array
+{
+    $resArr[$i] = sqrt($arr[$i]);
+    $i++;
+    if ($i < count($arr)) {
+        return getNewArr($arr, $i, $resArr);
+    } else {
+        return $resArr;
+    }
+}
+
+echo '<pre>';
+print_r(getNewArr([10, 24, 39, 45, 49]));
+echo '</pre>';
+
+function getNewAssociativeArr(int $i = 97, int $j = 0, array &$resArr = [[]]): array
+{
+    if ($i <= 122) {
+        $resArr[chr($i)] = [$j+1];
+        $i++;
+        $j++;
+        return getNewAssociativeArr($i, $j, $resArr);
+    } else {
+        return $resArr;
+    }
+}
+echo '<pre>';
+print_r(getNewAssociativeArr());
+echo '</pre>';
+$str='1234567890';
+function getSumOfStrPair(string $str,int $i = 0,int $sum=0): int{
+        if ($i<=strlen($str)-1){
+            $numb=(int)($str[$i] . $str[$i + 1]);
+            $i+=2;
+            $sum += $numb;
+            return getSumOfStrPair($str,$i,$sum);
+        }else{
+            return $sum;
+        }
+}
+echo nl2br(PHP_EOL .getSumOfStrPair($str));
