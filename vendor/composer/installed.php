@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e334e40f72f1078eae98a5a28a38d4dbfe221ea0',
+        'reference' => 'fed01071a79a4f8c8ae9c4e18c94493b9fe2f9ba',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e334e40f72f1078eae98a5a28a38d4dbfe221ea0',
+            'reference' => 'fed01071a79a4f8c8ae9c4e18c94493b9fe2f9ba',
             'dev_requirement' => false,
         ),
         'firebase/php-jwt' => array(
@@ -38,12 +38,12 @@
             'dev_requirement' => false,
         ),
         'google/apiclient-services' => array(
-            'pretty_version' => 'v0.239.0',
-            'version' => '0.239.0.0',
+            'pretty_version' => 'v0.237.0',
+            'version' => '0.237.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../google/apiclient-services',
             'aliases' => array(),
-            'reference' => 'ce8e34d618bdef9e824fd1728d505a468818712c',
+            'reference' => 'c10652adc29b4242237075acde318e83f88ab918',
             'dev_requirement' => false,
         ),
         'google/auth' => array(
@@ -83,12 +83,12 @@
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
-            'pretty_version' => '2.4.0',
-            'version' => '2.4.0.0',
+            'pretty_version' => '2.3.5',
+            'version' => '2.3.5.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../monolog/monolog',
             'aliases' => array(),
-            'reference' => 'd7fd7450628561ba697b7097d86db72662f54aef',
+            'reference' => 'fd4380d6fc37626e2f799f29d91195040137eba9',
             'dev_requirement' => false,
         ),
         'paragonie/constant_time_encoding' => array(
